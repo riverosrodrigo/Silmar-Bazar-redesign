@@ -45,6 +45,34 @@
     padding: 0px;
     margin: 0;
   }
+  ul, ol{
+    list-style: none;
+}
+.menu li a{
+    color: #454546;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 3px;
+}
+
+.menu li a:hover{
+    background-color: #454546;
+    color: white;
+}
+
+.menu > li {
+    float: left;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-block-size: 140px;
+}
+.menu li:hover > ul{
+    display: block;
+}
   .menu__item {
     text-align: center;
     margin: auto;
