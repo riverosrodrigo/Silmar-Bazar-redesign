@@ -73,28 +73,11 @@
 .menu li:hover > ul{
     display: block;
 }
-  .menu__item {
+.menu__item {
     text-align: center;
     margin: auto;
   }
-  .menu__link {
-    padding: 20px;
-    color: white;
-    text-decoration: none;
-    position: relative;
-    display: block;
-  }
-  .menu__link:hover {
-    background: white;
-    color: #212121;
-  }
-  
-  .mostrar{
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .icon-menu{
+.icon-menu{
     font-size: 1.5em;
     border: 1px solid #454546; 
     display: block;
@@ -102,19 +85,19 @@
     cursor: pointer;
     margin-left: auto;
   }
-  .main-header__btn{
+.main-header__btn{
     display: block;
     padding: 10px 30px;
     color: #454546;
     border: 1px solid #454546;
     text-decoration: none;
   }
-  .main-header__input{
+.main-header__input{
     display: block;
     padding: 10px;
     width: 50%;
   }
-  .main {
+.main {
     padding: 0 20px;
   }
   
@@ -439,13 +422,6 @@
       width: 100%;
       display: flex;
       background: none;
-    }
-    .menu__link{
-      color: #333;
-    }
-    .menu__link:hover{
-      background: #333;
-      color: white;
     }
     .container-products {
       grid-template-columns: repeat(4, 1fr);
