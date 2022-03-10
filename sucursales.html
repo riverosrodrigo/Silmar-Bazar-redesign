@@ -1,66 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Silmar Bazar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="icon" type="image/png" href="multimedia/logo silmar.png">
-  </head>
-  <body>
+    <title>Silmar Bazar</title>
+</head>
+<body>
     <header class="main-header">
-      <div class="container container--flex">
-        <div class="main-header__container">
-          <h1 class="main-header__title">SILMAR BAZAR</h1>
-          <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      TIENDA
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="cocina.html">COCINA</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="baños.html">BAÑOS</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="cafeteria.html">CAFETERIA</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="termos.html">TERMOS</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="limpieza.html">LIMPIEZA</a></li>
+        <div class="container container--flex">
+          <div class="main-header__container">
+            <h1 class="main-header__title">SILMAR BAZAR</h1>
+            <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+            <nav class="main-nav" id="main-nav">
+                <ul class="menu">
+                  <li class="menu__item"><a href="index.html" class="menu__link">INICIO</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">TIENDA</a>
+                    <ul class="subMenu">
+                        <li> <a href="cocina.html">Cocina</a></li>
+                        <li> <a href="cafeteria.html">Cafeteria</a></li>
+                        <li> <a href="termos.html">Termos</a></li>
+                        <li> <a href="baños.html">Baño</a></li>
+                        <li> <a href="limpieza.html">Limpieza</a></li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="comprar.html">¿COMO COMPRAR?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="sucursales.html">SUCURSALES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">CONTACTO</a>
-                  </li>
+                </li> 
+                  <li class="menu__item"><a href="comprar.html" class="menu__link">¿COMO COMPRAR?</a></li>
+                  <li class="menu__item"><a href="sucursales.html" class="menu__link">SUCURSALES</a></li>
+                  <li class="menu__item"><a href="contacto.html" class="menu__link">CONTACTO</a></li>
                 </ul>
-              </div>
-            </div>
-          </nav>
+              </nav>
+          </div>
+          <div class="main-header__container">
+            <span class="main-header__txt">Necesitas ayuda?</span>
+            <p class="main-header__txt"><i class="fas fa-phone"></i> Call 12345678099</p>
+          </div>
+          <div class="main-header__container">
+            <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+            <a href="" class="main-header__btn">Mi carrito <i class="fas fa-shopping-cart"></i></a>
+            <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+          </div>
         </div>
-      </div>
-    </header>   
+      </header>
 
-      <footer class="main-footer">
+    <footer class="main-footer">
         <div class="footer__section">
           <h2 class="footer__title">Sobre nosotros</h2>
           <p class="footer__txt">Somos Silmar Bazar, una empresa dedicada desde 1992 a la venta y comercializacíon de articulos de regaleria y bazar.</p>
@@ -73,22 +57,21 @@
           <p class="footer__txt">Email : silmarbazaronline@gmail.com</p>
         </div>
         <div class="footer__section">
-          <h2 class="footer__title">Enlaces rapidos</h2>
-          <a href="index.html" class="footer__link">Inicio</a>
-          <a href="cocina.html" class="footer__link">Tienda</a>
-          <a href="comprar.html" class="footer__link">¿Como comprar?</a>
-          <a href="sucursales.html" class="footer__link">Sucursales</a>
-          <a href="contacto.html" class="footer__link">Contacto</a>
-        </div>
+            <h2 class="footer__title">Enlaces rapidos</h2>
+            <a href="index.html" class="footer__link">Inicio</a>
+            <a href="#" class="footer__link">Tienda</a>
+            <a href="comprar.html" class="footer__link">¿Como comprar?</a>
+            <a href="sucursales.html" class="footer__link">Sucursales</a>
+            <a href="contacto.html" class="footer__link">Contacto</a>
+          </div>
         <div class="footer__section">
           <h2 class="footer__title">Suscríbete a nuestras ofertas</h2>
           <p class="footer__txt">Al suscribirse a nuestra lista de correo, siempre recibirá nuestras últimas noticias y actualizaciones.</p>
           <input type="email" class="footer__input" placeholder="Ingrese email">
         </div>
-        <p class="copy">© Silmar bazar. Todos los derechos reservados</p>
+        <p class="copy">© Silmar bazar. Todos los derechos reservados | Diseñado por Rodrigo Riveros</p>
       </footer>
-      <a href="#">
-        <img src="multimedia/sort-up-solid.svg" id="botonArriba" alt=""
-      /></a>
-      <script src="ancla.js"> </script>
-  </body>
+      <script src="slider.js"></script>
+      <script src="ancla.js"></script>
+</body>
+</html>
