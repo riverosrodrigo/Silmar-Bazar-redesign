@@ -227,7 +227,16 @@ ul, ol {
   text-align: center;
   position: relative;
 }
-.product:before {
+.productos {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* recien llegados */
+
+.productos:before {
   content: "New";
   background: #FF4E00;
   padding: 10px;
@@ -238,6 +247,12 @@ ul, ol {
   transform: rotate(-90deg);
   color: white;
 }
+
+.productos:hover .product__icon {
+  color: #FF4E00;
+}
+
+/* tienda */
 
 .product__img{
   width: 100%;
@@ -258,6 +273,32 @@ ul, ol {
 .product:hover .product__icon {
   color: #FF4E00;
 }
+
+/* COMO COMPRAR */
+
+.how-buy-landing__title-section {
+  margin: 0 auto;
+  text-align: center;
+}
+.how-buy-landing__steps {
+  display: flex;
+  justify-content: center;
+  padding: 92px 0 50px;
+}
+.how-buy-landing__steps .steps__step {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 40px;
+  width: 304px;
+}
+
+.how-buy-landing__steps .steps__step {
+  text-align: center;
+}
+
+/* footer */
+
 .container__testimonials{
   text-align: center;
   background: #F7F7F7;
@@ -365,6 +406,29 @@ ul, ol {
 }
 .copy {
   color: #555;
+}
+
+/* SUCURSALES */
+.title__sucursales{
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.txt__sucursales{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 /*Estilos para tablet*/
